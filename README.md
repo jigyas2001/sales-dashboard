@@ -1,8 +1,8 @@
 # Cloud-Based Sales Analytics Dashboard
 
-An interactive sales analytics dashboard built using Python and Streamlit and deployed on Streamlit Community Cloud (PaaS).
+An interactive sales analytics dashboard built using Python, Pandas, Plotly and Streamlit, and deployed on Streamlit Community Cloud (PaaS).
 
-## Live Demo
+## Live Dashboard
 
 [View the Live Dashboard](https://sales-dashboard-ctk3v3ags4kudujhtuihfu.streamlit.app/)
 
@@ -38,61 +38,45 @@ An interactive sales analytics dashboard built using Python and Streamlit and de
 - Total sales were **2,297,201**, with total profit of **286,397**.
 - The overall profit margin was approximately **12.5%**.
 
-## Cloud Computing Concepts Used
+## Cloud Concepts Used
 
-### PaaS – Platform as a Service
+### PaaS
 
-The application was deployed on Streamlit Community Cloud, where the platform manages the underlying infrastructure, application environment and deployment process. I only provide the application code and dependencies.
+The application was deployed using **Streamlit Community Cloud**, which follows a Platform as a Service (PaaS) model. The platform manages the underlying infrastructure and deployment environment, allowing the developer to focus on the application code.
 
 ### Continuous Deployment
 
-The application is connected to GitHub. Changes pushed to the repository can automatically update the deployed application.
+The application is connected to **GitHub**. Changes pushed to the GitHub repository can automatically trigger an updated deployment of the Streamlit application.
 
-### SaaS Delivery
+### Browser-Based Access
 
-Users can access the dashboard through a web browser without installing Python, Streamlit or other dependencies locally.
+The dashboard is accessible through a web browser using a public URL. Users do not need to install Python, Streamlit or the application locally to view the deployed dashboard.
 
 ## PaaS vs IaaS
 
-| PaaS | IaaS |
-|---|---|
-| Platform manages infrastructure | User manages the infrastructure |
-| No OS/server management required | OS and server management required |
-| Faster deployment | More configuration required |
-| Example: Streamlit Community Cloud | Example: AWS EC2 |
+With **PaaS**, the cloud provider manages the underlying infrastructure and operating environment.
 
-## Benefits of Cloud Deployment
+With **IaaS**, such as AWS EC2, the user has greater control but is responsible for managing the operating system, security configuration, updates and other infrastructure components.
 
-- Accessible through the internet
-- No local server required
-- No hardware infrastructure required
-- Easy deployment from GitHub
-- Automatic application updates after code changes
-- Users do not need to install the application locally
+## Cloud Benefits
+
+- Accessible through a web browser
+- No local server required for users
+- No hardware infrastructure required for deployment
+- GitHub-based continuous deployment
+- Easy sharing through a public URL
+- Faster deployment compared with managing infrastructure manually
 
 ## Limitations
 
-- Free cloud resources are limited
-- Applications may have limited performance compared with dedicated infrastructure
-- The application depends on internet connectivity
-- Public deployment requires careful consideration of data privacy
-- Free-tier applications may become inactive when not being used
+- Free cloud deployments may become inactive when unused.
+- Available computing resources are limited.
+- The dashboard uses sample/public data.
+- Application performance depends on available cloud resources and internet connectivity.
 
-## Deployment
+## How to Run Locally
 
-The application was developed using Python and Streamlit, stored in a GitHub repository and deployed through Streamlit Community Cloud.
+Install the required Python packages:
 
-**GitHub Repository:**  
-https://github.com/jigyas2001/sales-dashboard
-
-**Live Application:**  
-https://sales-dashboard-ctk3v3ags4kudujhtuihfu.streamlit.app/
-
-
-## Project Objective
-
-The objective of this project was to develop an interactive cloud-based sales analytics application that enables users to analyse sales and profitability across regions, categories, years and products through an accessible web-based dashboard.
-
-## Conclusion
-
-The project demonstrates how a Python-based analytics application can be transformed into a cloud-accessible business intelligence solution using Streamlit Community Cloud. It combines data analysis, interactive visualization, GitHub-based version control and PaaS deployment into a single end-to-end cloud analytics project.
+```bash
+pip install -r requirements.txt
